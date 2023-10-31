@@ -7,12 +7,22 @@
     <style>
       body {
         background: #b9dcd0;
+        font-family: Arial, Helvetica, sans-serif;
       }
       h1 {
         text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
       }
       h2 {
         text-align: center;
+      }
+
+      .intro-section {
+        background: rgba(255, 255, 255, 0.7);
+        margin: 50px 50px;
+        padding: 10px;
+        border-radius: 10px;
+        font-family: Arial, Helvetica, sans-serif;
       }
 
       .ice1,
@@ -24,27 +34,27 @@
 
       .intro-image {
         border-radius: 15px;
-        width: 80%;
+        width: 50%;
         display: block;
         margin: 0 auto;
         transition: all 150ms ease-in-out;
+        padding: 0 10px;
       }
 
       .intro-image:hover {
         transform: scale(1.03);
       }
 
-      ul {
+      p {
         padding-bottom: 20px;
         list-style-type: none;
         line-height: 25px;
-        text-align: center;
       }
 
       .container {
         max-width: 800px;
         margin: 30px auto;
-        background: white;
+        background: #f9eee9;
         padding: 30px;
         border-radius: 10px;
       }
@@ -84,6 +94,10 @@
         border-radius: 100px;
       }
 
+      .grid img:hover {
+        transform: scale(1.05);
+      }
+
       a {
         text-decoration: none;
       }
@@ -93,44 +107,41 @@
   <body>
     <button class="theme-button">Change Theme</button>
     <div class="container">
-      <h1>Ice Cream</h1>
-      <h2>How do you order ice cream in Germany?</h2>
-      <a
-        href="https://www.berlinglobal.org/index.php?germany-an-ice-cream-nation"
-        target="_blank"
-      >
-        <img src="images/img6.jpeg" class="intro-image"
-      /></a>
-      <br />
+      <div class="intro-section">
+        <h1>Ice Cream</h1>
+        <h2>How much do you know?</h2>
+      </div>
+
       <p>
-        Summer in Germany is wunderbar! What do you like doing at this time of
-        year? Probably eating ice cream. Do you know how to order all your
-        scoops in German?
+        Legend has all sorts of fanciful stories about Marco Polo bringing ice
+        cream from China and Catherine de’ Medici introducing it to France and
+        King Charles I having his own personal ice cream maker; all wonderful
+        stories, but sadly there is not a scrap of historic evidence to back up
+        any of these legends.
       </p>
 
       <div class="grid">
-        <img src="images/img2.jpeg" class="ice1" />
+        <a
+          href="https://www.berlinglobal.org/index.php?germany-an-ice-cream-nation"
+          target="_blank"
+        >
+          <img src="images/img2.jpeg" class="ice1"
+        /></a>
         <img src="images/img3.jpeg" class="ice2" />
         <img src="images/img4.jpeg" class="ice3" />
         <img src="images/img5.jpeg" class="ice4" />
       </div>
-      <ul>
-        <li><strong>How to order in German</strong></li>
-        <br />
-        <li>You:"Eine Kugel Vanille*eis, bitte." (eine Kugel = a scoop)</li>
-        <li>
-          You will probably be asked if you want it in a tub or cone: "In der
-          Waffel oder im Becher?"
-        </li>
-        <li>You: "In der Waffel, (bitte). / Im Becher, (bitte)."</li>
-        <li>"Mit Sahne?" - With cream?</li>
-
-        <li>You: "Ja bitte./ Nein, danke."</li>
-        <li>"Darf es sonst noch etwas sein?" - Anything else?</li>
-        <li>You: "Das ist alles."</li>
-        <li>"Das macht .....EUR. "</li>
-        <li>"Danke, auf Wiedersehen. / Tschüs."</li>
-      </ul>
+      <p>
+        Marco Polo didn’t introduce either ice cream or pasta to Europe and
+        worse still, he probably never even went to China. Most of these myths
+        seem to have been introduced by the Victorians. The earliest evidence of
+        anything approaching ice cream being made was in China in the Tang
+        period (A.D. 618-907). Buffalo, cows’ and goats’ milk was heated and
+        allowed to ferment. This ‘yoghurt’ was then mixed with flour for
+        thickening, camphor (yes camphor!) for flavour and ‘refrigerated’ before
+        being served. King Tang of Shang had a staff of 2,271 people which
+        included 94 ice-men.
+      </p>
       <a
         href="https://www.benjerry.com/whats-new/2017/09/ice-cream-useless-facts"
         target="_blank"
