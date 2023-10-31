@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Ice Cream 🍦</title>
+    <style>
+      body {
+        background: #b9dcd0;
+      }
+      h1 {
+        text-align: center;
+      }
+      h2 {
+        text-align: center;
+      }
+
+      .ice1,
+      .ice2,
+      .ice3,
+      .ice4 {
+        max-width: 100%;
+      }
+
+      .intro-image {
+        border-radius: 15px;
+        width: 60%;
+        display: block;
+        margin: 0 auto;
+        transition: all 150ms ease-in-out;
+      }
+
+      .intro-image:hover {
+        transform: scale(1.03);
+      }
+
+      ul {
+        padding-bottom: 20px;
+        list-style-type: none;
+        line-height: 25px;
+        text-align: center;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 30px auto;
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+      }
+
+      button {
+        display: block;
+        margin: 0px auto;
+        padding: 5px 10px;
+        border-radius: 5px;
+        border: 1px solid #b9dcd0;
+      }
+
+      button:hover {
+        background: #b9dcd0;
+        cursor: pointer;
+      }
+
+      .theme-button:hover {
+        background: white;
+        cursor: pointer;
+      }
+
+      footer {
+        text-align: center;
+        font-size: 15px;
+        color: white;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 15px;
+      }
+
+      .grid img {
+        width: 100%;
+        border-radius: 100px;
+      }
+
+      a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <button class="theme-button">Change Theme</button>
+    <div class="container">
+      <h1>Ice Cream</h1>
+      <h2>How do you order ice cream in Germany?</h2>
+      <a
+        href="https://www.berlinglobal.org/index.php?germany-an-ice-cream-nation"
+        target="_blank"
+      >
+        <img src="images/img1.jpeg" class="intro-image"
+      /></a>
+      <p>
+        Summer in Germany is wunderbar! What do you like doing at this time of
+        year? Probably eating ice cream. Do you know how to order all your
+        scoops in German?
+      </p>
+
+      <div class="grid">
+        <img src="images/img2.jpeg" class="ice1" />
+        <img src="images/img3.jpeg" class="ice2" />
+        <img src="images/img4.jpeg" class="ice3" />
+        <img src="images/img5.jpeg" class="ice4" />
+      </div>
+      <ul>
+        <li><strong>How to order in German</strong></li>
+        <br />
+        <li>You:"Eine Kugel Vanille*eis, bitte." (eine Kugel = a scoop)</li>
+        <li>
+          You will probably be asked if you want it in a tub or cone: "In der
+          Waffel oder im Becher?"
+        </li>
+        <li>You: "In der Waffel, (bitte). / Im Becher, (bitte)."</li>
+        <li>"Mit Sahne?" - With cream?</li>
+
+        <li>You: "Ja bitte./ Nein, danke."</li>
+        <li>"Darf es sonst noch etwas sein?" - Anything else?</li>
+        <li>You: "Das ist alles."</li>
+        <li>"Das macht .....EUR. "</li>
+        <li>"Danke, auf Wiedersehen. / Tschüs."</li>
+      </ul>
+      <a
+        href="https://www.benjerry.com/whats-new/2017/09/ice-cream-useless-facts"
+        target="_blank"
+      >
+        <button>15 completely Useless Facts about Ice Cream</button></a
+      >
+    </div>
+    <footer>
+      Coded with 🩷 by <a href="" target="_blank">Rosemary Hogarth</a>
+    </footer>
+  </body>
+</html>
