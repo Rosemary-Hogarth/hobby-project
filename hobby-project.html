@@ -95,10 +95,12 @@
 
       footer {
         text-align: center;
-        font-size: 15px;
+        font-size: 12px;
         color: black;
         opacity: 0.8px;
         font-family: Futura;
+
+        margin: 40px 0 0 0;
       }
 
       .grid {
@@ -120,10 +122,22 @@
         text-decoration: none;
         color: #56d59c;
       }
+
+      .dark {
+        background-color: #001;
+        background-image: radial-gradient(white 15%, transparent 16%),
+          radial-gradient(white 15%, transparent 16%);
+        background-size: 60px 60px;
+        background-position: 0 0, 30px 30px;
+      }
+
+      .dark .container {
+        background: orange;
+      }
     </style>
   </head>
 
-  <body>
+  <body class="dark">
     <button class="theme-button">Change Theme</button>
     <div class="container">
       <div class="intro-section">
@@ -182,11 +196,28 @@
         href="https://www.benjerry.com/whats-new/2017/09/ice-cream-useless-facts"
         target="_blank"
       >
-        <button>15 completely Useless Facts about Ice Cream</button></a
+        <button>15 Completely Useless Facts about Ice Cream</button></a
       >
+      <footer>
+        Coded with 🩷 by <a href="" target="_blank">Rosemary Hogarth</a>
+      </footer>
     </div>
-    <footer>
-      Coded with 🩷 by <a href="" target="_blank">Rosemary Hogarth</a>
-    </footer>
+
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+
+        // body.classList.toggle("dark"))
+
+        if (body.classList.contains("dark")) {
+          body.classList.remove("dark");
+        } else {
+          body.classList.add("dark");
+        }
+      }
+
+      let themeButton = document.querySelector(".theme-button");
+      themeButton.addEventListener("click", changeTheme);
+    </script>
   </body>
 </html>
